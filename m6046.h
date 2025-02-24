@@ -2,8 +2,8 @@
 // Author: Jeff Zhong
 // Date: 02/24/2025
 
-# ifndef TS_GG160160027W_INITIALIZE_H
-# define TS_GG160160027W_INITIALIZE_H
+# ifndef M6046_H
+# define M6046_H
 
 # include <stdint.h>
 # include <8052.h>
