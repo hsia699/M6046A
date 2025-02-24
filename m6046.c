@@ -13,7 +13,7 @@
 *  @hardware
 *                          - MCU: 8051-based
 *                          - LCD: M6046A(UC1638 driver)
-*                          - Interface: 8080 Parallel£¨D0-D7£¬ WR0, CS, CD, RST£©
+*                          - Interface: 8080 ParallelÂ£Â¨D0-D7Â£Â¬ WR0, CS, CD, RSTÂ£Â©
 *
 *  @usage
 *                          1. Call Init_UC1538() to initialize.
@@ -22,7 +22,7 @@
 *                          4. Display logic.
 */
 
-# include "TS-GG160160027W-Initialize.h"
+# include "m6046.h"
 
 void delay_ms(int ms) {
     int i, j;
