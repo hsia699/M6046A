@@ -41,46 +41,46 @@ void Init_UC1538()
     RST=1;
     delay_ms(200);
 	
-	write_cmd(0x30);
-	delay_ms(10);
+    write_cmd(0x30);
+    delay_ms(10);
 
-	write_cmd(0xE1);    //system reset
-	write_cmd(0xE2); 
-	delay_ms(10); 
-	write_cmd(0xEb);	  //Set LCD Bias Ratio   
-	write_cmd(0x2D);	  //Set Pump Control 
-	write_cmd(0x81);
-	write_dat(171);	    //Set VBias Potentiometer           
-	write_cmd(0x24);	  //Set Temperature  Compensation
-	write_cmd(0x40);    //set scroll line LSB
-	write_cmd(0x50);    //Set Scroll Line MSB    
+    write_cmd(0xE1);      //system reset
+    write_cmd(0xE2); 
+    delay_ms(10); 
+    write_cmd(0xEb);	  //Set LCD Bias Ratio   
+    write_cmd(0x2D);	  //Set Pump Control 
+    write_cmd(0x81);
+    write_dat(171);	  //Set VBias Potentiometer           
+    write_cmd(0x24);	  //Set Temperature  Compensation
+    write_cmd(0x40);      //set scroll line LSB
+    write_cmd(0x50);      //Set Scroll Line MSB    
 	
-	write_cmd(0x84);		//Set Partial Display Control   
-	write_cmd(0x86);		//Set Com Scan Function
-	write_cmd(0x89);	  //Set RAM Address Control     
-	write_cmd(0x95); 		//Set Display mode
-	write_cmd(0xA2);	  //Set Line Rate         
-	write_cmd(0xA4);	  //Set All Pixels On   
-	write_cmd(0xA6);	  //Set Inverse Display  
-	write_cmd(0xC4);	  //Set LCD Mapping Control      
+    write_cmd(0x84);	  //Set Partial Display Control   
+    write_cmd(0x86);	  //Set Com Scan Function
+    write_cmd(0x89);	  //Set RAM Address Control     
+    write_cmd(0x95); 	  //Set Display mode
+    write_cmd(0xA2);	  //Set Line Rate         
+    write_cmd(0xA4);	  //Set All Pixels On   
+    write_cmd(0xA6);	  //Set Inverse Display  
+    write_cmd(0xC4);	  //Set LCD Mapping Control      
 
-	write_cmd(0xC8);	  //N-LINE
-	write_dat(0x20);		//Set N-Line Inverse    
+    write_cmd(0xC8);	  //N-LINE
+    write_dat(0x20);	  //Set N-Line Inverse    
 	
-	write_cmd(0xF1);
-	write_dat(159);	    //Set Com End 
+    write_cmd(0xF1);
+    write_dat(159);	  //Set Com End 
 	
-	write_cmd(0x60);    //set page address  LSB
-	write_cmd(0x70);		//Set page Address  MSB
+    write_cmd(0x60);      //set page address  LSB
+    write_cmd(0x70);	  //Set page Address  MSB
 	
-	write_cmd(0xD4);
+    write_cmd(0xD4);
 
-	write_cmd(0x04);
-	write_dat(0);		    //Set Column Address     
+    write_cmd(0x04);
+    write_dat(0);         //Set Column Address     
 	
-	write_cmd(0xC9);
-	write_dat(0xAD);    //Set Display Enable 
-	delay_ms(10);
+    write_cmd(0xC9);
+    write_dat(0xAD);      //Set Display Enable 
+    delay_ms(10);
 }
 
 // Send command to the LCD.
