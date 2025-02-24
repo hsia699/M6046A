@@ -1,4 +1,4 @@
-#include "TS-GG160160027W-Initialize.h"
+#include "m6046.h"
 
 void main() {
     uint8_t page;
